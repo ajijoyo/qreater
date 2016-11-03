@@ -3,3 +3,4 @@
 //
 
 #import "SESlideTableViewCell.h"
+#import "Extensions.h"

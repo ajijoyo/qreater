@@ -55,10 +55,12 @@ class ViewController: UIViewController,AVCaptureMetadataOutputObjectsDelegate {
         readLabel.addGestureRecognizer(tap)
         readLabel.userInteractionEnabled = true
         
+        
     }
     
     func copytext(){
         if !readLabel.text!.isEmpty {
+            startScan()
             let paste = UIPasteboard.generalPasteboard()
             paste.string = readLabel.text
             readLabel.layer.backgroundColor = UIColor.yellowColor().CGColor
